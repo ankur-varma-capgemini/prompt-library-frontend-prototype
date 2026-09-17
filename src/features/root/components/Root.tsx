@@ -1,4 +1,5 @@
 import Header from "#/features/header/components/Header";
+import Bar from "#/features/navigation/Bar";
 import { TanStackDevtools } from "@tanstack/react-devtools";
 import { Outlet } from "@tanstack/react-router";
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
@@ -8,6 +9,7 @@ const Root = (): JSX.Element => {
   return (
     <>
       <Header />
+      <Bar />
       <Outlet />
       <TanStackDevtools
         config={{
